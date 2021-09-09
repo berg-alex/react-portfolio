@@ -1,0 +1,141 @@
+.App {
+  text-align: center;
+}
+
+.map-center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.my-lottie {
+  height: 80%;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.navbrand {
+  text-align: center;
+  position: relative;
+  top: 5vh;
+}
+
+.navLinks {
+  text-align: center;
+  position: relative;
+}
+
+.mynav {
+  opacity: 60%;
+}
+
+.my-map {
+  width: 350px;
+  height: 350px;
+  position: relative;
+  right: 15%;
+  opacity: 80%;
+}
+
+video {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+
+  .my-map {
+
+    position: relative;
+      right: 10%;
+  
+  }
+
+
+
+ }
+
+ /* Medium devices (tablets, 768px and up) */
+ @media (min-width: 768px) {  
+
+  .my-map {
+    position: relative;
+    left: 5%;
+  }
+  
+  .navLinks {
+    position: relative;
+    left: 10%;
+    top: 10vh;
+  } 
+
+  .my-lottie {
+    position: relative;
+    left: -10%;
+  }
+
+  .navbrand {
+    position: relative;
+    left: -10%;
+    top: 20vh;
+  }
+
+ }
+
+/* Large devices (landscape phones, 992px and up) */
+@media (min-width: 992px) { 
+  
+.navLinks {
+  position: relative;
+  left: 20%;
+  top: 10vh;
+}
+
+.my-lottie {
+  position: relative;
+  left: -20px;
+}
+
+.navbrand {
+  position: relative;
+  top: 10vh;
+}
+
+
+ }
+
+ 
+
+  /* X-Large devices (tablets, 1200px and up) */
+ @media (min-width: 1200px) {  
+
+  .navLinks {
+    position: relative;
+    left: 20vw;
+    top: 10vh;
+  } 
+
+  .navbrand {
+    position: relative;
+    top: 10vh;
+    left: 10vw;
+  }
+
+  .my-lottie {
+    position: relative;
+    left: 20%;
+  }
+
+  .my-map {
+    position: relative;
+    left: 10vw;
+  }
+
+ }
