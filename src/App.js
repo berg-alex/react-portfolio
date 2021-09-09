@@ -100,11 +100,11 @@ function App() {
         </div>
       </Col>
     </Container>
-    <video width="100vw" opacity="60" autoplay="true" loop muted >
+    {/* <video width="100vw" opacity="60" autoplay="true" loop muted >
       <source src={video} type="video/mp4" />
 
       Sorry, your browser doesn't support embedded videos.
-    </video> 
+    </video>  */}
   </div>
 );
 }
