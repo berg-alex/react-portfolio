@@ -7,6 +7,10 @@
   margin-right: auto;
 }
 
+.mynav {
+  opacity: 80%;
+}
+
 .my-lottie {
   height: 80%;
   width: 80%;
@@ -25,16 +29,11 @@
   position: relative;
 }
 
-.mynav {
-  opacity: 60%;
-}
-
 .my-map {
   width: 350px;
   height: 350px;
   position: relative;
   right: 15%;
-  opacity: 80%;
 }
 
 video {
@@ -44,6 +43,7 @@ video {
   position: fixed;
   top: 0;
   left: 0;
+  z-index: -10;
 }
 
 
@@ -56,9 +56,6 @@ video {
       right: 10%;
   
   }
-
-
-
  }
 
  /* Medium devices (tablets, 768px and up) */

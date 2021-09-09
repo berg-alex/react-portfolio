@@ -1,11 +1,11 @@
 import React from "react";
 import { Navbar, NavbarBrand, NavItem, Button, Row, Col, Container } from 'reactstrap';
-import './App.css';
 import GoogleMapReact from 'google-map-react';
 import Lottie from 'react-lottie';
 import animationData from './assets/66205-coding';
 import video from "./assets/video-digital-info.mp4";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './App.css';
 
 const AnyReactComponent = ({ text }) => (
   <div style={{
@@ -49,7 +49,7 @@ function App() {
           <Container>
           <Row>
             <Col className="navbrand" xs="12" sm="12" md="4" lg="4">
-              <NavbarBrand href="/">Web Design <br/>& <br/> Frontend services</NavbarBrand>
+              <NavbarBrand href="/">Web Design <br/>& <br/> Frontend Development</NavbarBrand>
             </Col>
 
             <Col className="my-lottie" xs="12" sm="12" md="5" lg="5">
