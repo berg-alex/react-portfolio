@@ -1,12 +1,11 @@
 import React from "react";
+import { Navbar, NavbarBrand, NavItem, Button, Row, Col, Container } from 'reactstrap';
 import './App.css';
 import GoogleMapReact from 'google-map-react';
-import { Navbar, NavbarBrand, NavItem, Button, Row, Col, Container } from 'reactstrap';
-import 'bootstrap/dist/css/bootstrap.min.css';
-
 import Lottie from 'react-lottie';
 import animationData from './assets/66205-coding';
 import video from "./assets/video-digital-info.mp4";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const AnyReactComponent = ({ text }) => (
   <div style={{
@@ -100,11 +99,11 @@ function App() {
         </div>
       </Col>
     </Container>
-    {/* <video width="100vw" opacity="60" autoplay="true" loop muted >
+    <video width="100vw" opacity="60" autoplay="true" loop muted >
       <source src={video} type="video/mp4" />
 
       Sorry, your browser doesn't support embedded videos.
-    </video>  */}
+    </video> 
   </div>
 );
 }
