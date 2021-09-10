@@ -47,7 +47,7 @@ function App() {
       <nav>
         <Navbar className='mynav' color="dark" dark expand="md">
           <Container>
-          <Row>
+          
             <Col className="navbrand" xs="12" sm="12" md="4" lg="4">
               <NavbarBrand href="/">Web Design <br/>& <br/> Frontend Development</NavbarBrand>
             </Col>
@@ -77,7 +77,7 @@ function App() {
 
              
               
-          </Row>
+          
           </Container>
 
         </Navbar>
