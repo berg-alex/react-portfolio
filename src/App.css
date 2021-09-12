@@ -2,14 +2,18 @@
   text-align: center;
 }
 
-.map-center {
-  margin-left: auto;
-  margin-right: auto;
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.nav-container {
+  text-align: center;
 }
 
 .mynav {
   opacity: 0.8;
-  z-index: 2000;
+  position: static;
 }
 
 .my-lottie {
@@ -17,12 +21,14 @@
   width: 80%;
   margin-left: auto;
   margin-right: auto;
+  position: relative;
+  
 }
 
 .navbrand {
   text-align: center;
-  /* position: relative;
-  top: 5vh; */
+  position: relative;
+  left: 15px;
 }
 
 .navLinks {
@@ -30,11 +36,14 @@
 }
 
 .my-map {
-  width: 50vw;
-  height: 50vw;
-  position: relative;
   opacity: 0.8;
-  /* right: 15%; */
+}
+
+#map-size {
+  width: 80vw;
+  height: 80vw;
+  position: relative;
+  left: 5%;
 }
 
 video {
@@ -53,7 +62,16 @@ video {
 
   .my-map {
     position: relative;
-    right: 10%;
+
+  }
+
+  .navbrand {
+    position: relative;
+    right: 10vw;
+  }
+
+  #map-size {
+    right: 5%;
   }
   /* .navLinks {
     position: relative;
@@ -68,9 +86,11 @@ video {
  /* Medium devices (tablets, 768px and up) */
  @media (min-width: 768px) {  
 
-  .my-map {
-    position: relative;
-    left: -5vw;
+
+  #map-size {
+    width: 50vw;
+    height: 50vw;
+    left: 30%;
   }
   
   .navLinks {
@@ -83,11 +103,10 @@ video {
     left: -20%;
   }
 
-  /* .navbrand {
+  .navbrand {
     position: relative;
-    left: -10%;
-    top: 20vh;
-  } */
+    left: -5%;
+  }
 
  }
 

@@ -6,6 +6,13 @@ import animationData from './assets/66205-coding';
 import video from "./assets/video-digital-info.mp4";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+import Contact from './Components/contact';
 
 const AnyReactComponent = ({ text }) => (
   <div style={{
@@ -42,11 +49,30 @@ function App() {
     }
   };
 
+  function Skills() {
+    return <h2>Skills</h2>;
+  }
+  
+  function Qualifications() {
+    return <h2>Qualifications</h2>;
+  }
+
+  //moved to component
+  
+  // function Contact() {
+  //   return <h2>Contact</h2>;
+  // }
+
+  const handleApiLoaded = (map, maps) => {
+    // use map and maps objects
+  };
+
   return (
     <div>
+      <Router>
       <nav>
         <Navbar className='mynav' color="dark" dark expand="md">
-          <Container>
+          <Container className="nav-container">
           
             <Col className="navbrand" xs="12" sm="12" md="4" lg="4">
               <NavbarBrand href="/">Web Design <br/>& <br/> Frontend Development</NavbarBrand>
@@ -61,45 +87,57 @@ function App() {
             </Col>
             <Col className="navLinks" xs="12" sm="12" md="3" lg="3">  
               <NavItem className="navitems" style={{marginTop: "20px", marginBottom: "20px"}}>
-                <Button className="navbutton" href="/" style={{width: "150px"}}>Skills </Button>
+                <Button className="navbutton" href="/Skills" style={{width: "150px"}}>Skills </Button>
               </NavItem>
               
-              
               <NavItem className="navitems" style={{marginBottom: "20px"}}>
-              <Button className="navbutton" href="/" style={{width: "150px"}}>About Me </Button>
+              <Button className="navbutton" href="/Qualifications" style={{width: "150px"}}>Qualifications </Button>
               </NavItem>
-              
-              
+
               <NavItem className="navitems" style={{marginBottom: "20px"}}>
-              <Button className="navbutton" href="/" style={{width: "150px"}}>Qualifications </Button>
+              <Button className="navbutton" href="/Contact" style={{width: "150px"}}>Contact </Button>
               </NavItem>
             </Col>
 
-             
-              
-          
           </Container>
 
         </Navbar>
       </nav>
+
+      <Switch>
+          <Route path="/skills">
+            <Skills />
+          </Route>
+          <Route path="/qualifications">
+            <Qualifications />
+          </Route>
+          <Route path="/contact">
+            <Contact />
+          </Route>
+        </Switch>
+      </Router>
     <Container>
-      <Col className="map-center" xs="6" sm="6" md="6" lg="6">
-        <div className='my-map'>
+      <Col xs="12" sm="12" md="6" lg="6">
+        <div className="my-map" id="map-size">
           <GoogleMapReact
             bootstrapURLKeys={{ key: "" }}
             defaultCenter={defaultProps.center}
             defaultZoom={defaultProps.zoom}
+            onGoogleApiLoaded={({ map, maps }) => handleApiLoaded(map, maps)}
+            yesIWantToUseGoogleMapApiInternals={true}
           >
           <AnyReactComponent
             lat={37.8272}
             lng={-122.2913}
             text="My Marker"
           />
+          
           </GoogleMapReact>
+          
         </div>
       </Col>
     </Container>
-    <video width="100vw" opacity="60" autoplay="true" loop muted >
+    <video width="100vw" opacity="60" autoPlay={true} loop muted >
       <source src={video} type="video/mp4" />
 
       Sorry, your browser doesn't support embedded videos.
