@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { HashRouter, Route, Link } from "react-router-dom";
+import { HashRouter, Route, Link, Switch } from "react-router-dom";
 import { Navbar, NavbarBrand, NavItem, Button, Row, Col, Container } from 'reactstrap';
 import GoogleMapReact from 'google-map-react';
 import Lottie from 'react-lottie';
@@ -7,7 +7,7 @@ import animationData from './assets/66205-coding';
 import video from "./assets/video-digital-info.mp4";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
-// import Contact from './Components/contact';
+import Contact from './Components/contact';
 // import Skills from './Components/Skills';
 // import Qualifications from './Components/Qualifications';
 
@@ -35,8 +35,7 @@ function App() {
     },
     zoom: 5
   };
-  const Home = () => <div><h2>Home</h2></div>
-const About = () => <div><h2>About</h2></div>
+
 
   const defaultOptions = {
     loop: true,
@@ -47,19 +46,15 @@ const About = () => <div><h2>About</h2></div>
     }
   };
 
-  // function Skills() {
-  //   return <h2>Skills</h2>;
-  // }
-  
-  // function Qualifications() {
-  //   return <h2>Qualifications</h2>;
-  // }
-
   //moved to component
   
-  // function Contact() {
-  //   return <h2>Contact</h2>;
-  // }
+  function About() {
+    return <h2>About</h2>;
+  }
+  function Home() {
+    return <h2>Home</h2>;
+  }
+
 
   const handleApiLoaded = (map, maps) => {
     // use map and maps objects
@@ -68,13 +63,8 @@ const About = () => <div><h2>About</h2></div>
   return (
     <div>
       <HashRouter basename="/">
-      <nav>
-      <ul>
-            <li><Link to="/">Home</Link></li>
-            <li><Link to="/about">About</Link></li>
-          </ul>
-          <Route exact path="/" component={Home} />
-          <Route path="/about" component={About} />
+        <nav>
+        
         <Navbar className='mynav' color="dark" dark expand="md">
           <Container className="nav-container">
           
@@ -91,21 +81,32 @@ const About = () => <div><h2>About</h2></div>
             </Col>
             <Col className="navLinks" xs="12" sm="12" md="3" lg="3">  
               <NavItem className="navitems" style={{marginTop: "20px", marginBottom: "20px"}}>
-                <Button className="navbutton" href="/Skills" style={{width: "150px"}}>Skills </Button>
+                <Button className="navbutton" href="/skills" style={{width: "150px"}}>Skills </Button>
               </NavItem>
               
               <NavItem className="navitems" style={{marginBottom: "20px"}}>
-              <Button className="navbutton" href="/Qualifications" style={{width: "150px"}}>Qualifications </Button>
+              <Button className="navbutton" href="/qualifications" style={{width: "150px"}}>Qualifications </Button>
               </NavItem>
 
               <NavItem className="navitems" style={{marginBottom: "20px"}}>
-              <Button className="navbutton" href="/Contact" style={{width: "150px"}}>Contact </Button>
+                <Link to="/contact"><Button className="navbutton" style={{width: "150px"}}>Contact </Button></Link>
               </NavItem>
             </Col>
 
           </Container>
 
         </Navbar>
+        <Switch>
+            <Route path="/contact">
+              <Contact />
+            </Route>
+            <Route path="/about">
+              <About />
+            </Route>
+            <Route path="/">
+              <Home />
+            </Route>
+        </Switch>
       </nav>
       </HashRouter>
 
