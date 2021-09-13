@@ -1,12 +1,26 @@
-import React from 'react';
+import React, { Component } from 'react';
+import { HashRouter, Route, Link, Switch } from "react-router-dom";
 import ReactDOM from 'react-dom';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Contact from './Components/contact';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <HashRouter basename="/">
+    
+
+    <Switch>
+            <Route path="/contact">
+              <Contact />
+            </Route>
+            {/* <Route path="/about">
+              <About />
+            </Route> */}
+            <Route path="/">
+              <App />
+            </Route>
+        </Switch>
+  </HashRouter>,
   document.getElementById('root')
 );
 

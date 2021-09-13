@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { HashRouter, Route, Link, Switch } from "react-router-dom";
+// import { HashRouter, Route, Link, Switch } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { Navbar, NavbarBrand, NavItem, Button, Row, Col, Container } from 'reactstrap';
 import GoogleMapReact from 'google-map-react';
 import Lottie from 'react-lottie';
@@ -62,7 +63,7 @@ function App() {
 
   return (
     <div>
-      <HashRouter basename="/">
+      {/* <HashRouter basename="/"> */}
         <nav>
         
         <Navbar className='mynav' color="dark" dark expand="md">
@@ -96,7 +97,7 @@ function App() {
           </Container>
 
         </Navbar>
-        <Switch>
+        {/* <Switch>
             <Route path="/contact">
               <Contact />
             </Route>
@@ -106,9 +107,9 @@ function App() {
             <Route path="/">
               <Home />
             </Route>
-        </Switch>
+        </Switch> */}
       </nav>
-      </HashRouter>
+      {/* </HashRouter> */}
 
     <Container>
       <Col xs="12" sm="12" md="6" lg="6">
