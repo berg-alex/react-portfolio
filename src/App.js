@@ -69,7 +69,7 @@ function App() {
           <Container className="nav-container">
           
             <Col className="navbrand" xs="12" sm="12" md="4" lg="4">
-              <NavbarBrand href="/">Web Design <br/>& <br/> Frontend Development</NavbarBrand>
+              <Link to="/"><NavbarBrand>Web Design <br/>& <br/> Frontend Development</NavbarBrand></Link>
             </Col>
 
             <Col className="my-lottie" xs="12" sm="12" md="5" lg="5">
