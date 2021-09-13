@@ -1,4 +1,5 @@
-import React from "react";
+import React, { Component } from 'react';
+import { HashRouter, Route, Link } from "react-router-dom";
 import { Navbar, NavbarBrand, NavItem, Button, Row, Col, Container } from 'reactstrap';
 import GoogleMapReact from 'google-map-react';
 import Lottie from 'react-lottie';
@@ -6,13 +7,9 @@ import animationData from './assets/66205-coding';
 import video from "./assets/video-digital-info.mp4";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-} from "react-router-dom";
-import Contact from './Components/contact';
+// import Contact from './Components/contact';
+// import Skills from './Components/Skills';
+// import Qualifications from './Components/Qualifications';
 
 const AnyReactComponent = ({ text }) => (
   <div style={{
@@ -38,7 +35,8 @@ function App() {
     },
     zoom: 5
   };
-  
+  const Home = () => <div><h2>Home</h2></div>
+const About = () => <div><h2>About</h2></div>
 
   const defaultOptions = {
     loop: true,
@@ -49,13 +47,13 @@ function App() {
     }
   };
 
-  function Skills() {
-    return <h2>Skills</h2>;
-  }
+  // function Skills() {
+  //   return <h2>Skills</h2>;
+  // }
   
-  function Qualifications() {
-    return <h2>Qualifications</h2>;
-  }
+  // function Qualifications() {
+  //   return <h2>Qualifications</h2>;
+  // }
 
   //moved to component
   
@@ -69,8 +67,14 @@ function App() {
 
   return (
     <div>
-      <Router>
+      <HashRouter basename="/">
       <nav>
+      <ul>
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/about">About</Link></li>
+          </ul>
+          <Route exact path="/" component={Home} />
+          <Route path="/about" component={About} />
         <Navbar className='mynav' color="dark" dark expand="md">
           <Container className="nav-container">
           
@@ -103,19 +107,8 @@ function App() {
 
         </Navbar>
       </nav>
+      </HashRouter>
 
-      <Switch>
-          <Route path="/skills">
-            <Skills />
-          </Route>
-          <Route path="/qualifications">
-            <Qualifications />
-          </Route>
-          <Route path="/contact">
-            <Contact />
-          </Route>
-        </Switch>
-      </Router>
     <Container>
       <Col xs="12" sm="12" md="6" lg="6">
         <div className="my-map" id="map-size">
