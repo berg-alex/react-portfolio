@@ -53,6 +53,16 @@ video {
   z-index: -10;
 }
 
+@media (max-width: 767px) {
+  video {
+      display: none;
+  }
+  body {
+      background: url('bg-poster.png');
+      background-size: cover;
+  }
+}
+
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) { 
