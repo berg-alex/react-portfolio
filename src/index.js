@@ -4,8 +4,10 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Contact from './Components/contact';
+import video from "./assets/video-digital-info.mp4";
 
 ReactDOM.render(
+  <div>
   <HashRouter basename="/">
     <Switch>
             <Route path="/contact">
@@ -18,7 +20,13 @@ ReactDOM.render(
               <App />
             </Route>
         </Switch>
-  </HashRouter>,
+  </HashRouter>
+  <video id="bg-vid" width="100vw" opacity="60" autoPlay loop muted >
+      <source src={video} type="video/mp4" poster="./assets/bg-poster.png"/>
+
+      Sorry, your browser doesn't support embedded videos.
+    </video> 
+  </div>,
   document.getElementById('root')
 );
 
