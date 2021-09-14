@@ -1,3 +1,162 @@
-#root {
-    background-color: white;
-}
+.App {
+    text-align: center;
+  }
+  
+  html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+  
+  .nav-container {
+    text-align: center;
+  }
+  
+  .mynav {
+    opacity: 0.8;
+    position: static;
+  }
+  
+  .my-lottie {
+    height: 80%;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    
+  }
+  
+  .navbrand {
+    text-align: center;
+    position: relative;
+    left: 15px;
+  }
+  
+  .navLinks {
+    text-align: center;
+  }
+  
+  .my-map {
+    opacity: 0.8;
+  }
+  
+  #map-size {
+    width: 80vw;
+    height: 80vw;
+    position: relative;
+    left: 5%;
+  }
+  
+  video {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -10;
+  }
+  
+  
+  /* Small devices (landscape phones, 576px and up) */
+  @media (min-width: 576px) { 
+  
+    .my-map {
+      position: relative;
+  
+    }
+  
+    .navbrand {
+      position: relative;
+      right: 10vw;
+    }
+  
+    #map-size {
+      right: 5%;
+    }
+    /* .navLinks {
+      position: relative;
+      left: 0;
+    }
+    .my-lottie {
+      position: relative;
+      left: 0;
+    } */
+   }
+  
+   /* Medium devices (tablets, 768px and up) */
+   @media (min-width: 768px) {  
+  
+  
+    #map-size {
+      width: 50vw;
+      height: 50vw;
+      left: 30%;
+    }
+    
+    .navLinks {
+      position: relative;
+      left: -30vw;
+    } 
+  
+    .my-lottie {
+      position: relative;
+      left: -20%;
+    }
+  
+    .navbrand {
+      position: relative;
+      left: -5%;
+    }
+  
+   }
+  
+  /* Large devices (landscape phones, 992px and up) */
+  @media (min-width: 992px) { 
+    
+  /* .navLinks {
+    position: relative;
+    left: 20%;
+    top: 10vh;
+  } */
+  
+  /* .my-lottie {
+    position: relative;
+    left: -20px;
+  } */
+  
+  /* .navbrand {
+    position: relative;
+    top: 10vh;
+  } */
+  
+  
+   }
+  
+   
+  
+    /* X-Large devices (tablets, 1200px and up) */
+   @media (min-width: 1200px) {  
+  
+    /* .navLinks {
+      position: relative;
+      left: 20vw;
+      top: 10vh;
+    }  */
+  
+    /* .navbrand {
+      position: relative;
+      top: 10vh;
+      left: 10vw;
+    } */
+  
+    /* .my-lottie {
+      position: relative;
+      left: 20%;
+    } */
+  
+    .my-map {
+      position: relative;
+      left: -5vw;
+    }
+  
+   }

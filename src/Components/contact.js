@@ -1,19 +1,21 @@
 import React from "react";
-import {Link } from "react-router-dom";
+import '../contact.css';
+import video from "../assets/video-digital-info.mp4";
+import Mynav from "./my-nav";
+
+
 
  function Contact() {
 
      return (
        <div>
-         <p>
-           This is the first page.
-           <br />
-           Click on the button below.
-         </p>
-         <Link to="/"><button>
-           Home
-         </button>
-         </Link>
+        <Mynav />
+         
+         <video width="100vw" opacity="60" autoPlay={true} loop muted >
+      <source src={video} type="video/mp4" />
+
+      Sorry, your browser doesn't support embedded videos.
+    </video> 
        </div>
      );
 

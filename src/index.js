@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import { HashRouter, Route, Link, Switch } from "react-router-dom";
+import React from 'react';
+import { HashRouter, Route, Switch } from "react-router-dom";
 import ReactDOM from 'react-dom';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
@@ -7,8 +7,6 @@ import Contact from './Components/contact';
 
 ReactDOM.render(
   <HashRouter basename="/">
-    
-
     <Switch>
             <Route path="/contact">
               <Contact />
