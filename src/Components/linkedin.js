@@ -1,7 +1,5 @@
 import React from "react";
 import '../contact.css';
-// import video from "../assets/video-digital-info.mp4";
-import Mynav from "./my-nav";
 import Lottie from 'react-lottie';
 import animationData from '../assets/linkedin.json';
 import { Col } from 'reactstrap';
@@ -23,7 +21,7 @@ const defaultOptions = {
       <div>
   <Col xs="12" sm="12" md="12" lg="12">
   <div style={{width: "100px", margin: "auto auto"}}>
-  <a href="https://www.linkedin.com/in/alex-b-6676551b7/" target="_blank">
+  <a href="https://www.linkedin.com/in/alex-b-6676551b7/" target="_blank" rel="noopener noreferrer">
           <Lottie    
             options={defaultOptions}
             height={100}

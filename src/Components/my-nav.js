@@ -38,12 +38,12 @@ const defaultOptions = {
             </Col>
             <Col className="navLinks" xs="12" sm="12" md="3" lg="3">  
               <NavItem className="navitems" style={{marginTop: "20px", marginBottom: "20px"}}>
-                <Button className="navbutton" href="/skills" style={{width: "150px"}}>Skills </Button>
+              <Link to="/skills"><Button className="navbutton" style={{width: "150px"}}>Skills </Button></Link>
               </NavItem>
               
-              <NavItem className="navitems" style={{marginBottom: "20px"}}>
+              {/* <NavItem className="navitems" style={{marginBottom: "20px"}}>
               <Button className="navbutton" href="/qualifications" style={{width: "150px"}}>Qualifications </Button>
-              </NavItem>
+              </NavItem> */}
 
               <NavItem className="navitems" style={{marginBottom: "20px"}}>
                 <Link to="/contact"><Button className="navbutton" style={{width: "150px"}}>Contact </Button></Link>

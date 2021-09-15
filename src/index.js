@@ -4,19 +4,20 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Contact from './Components/contact';
+import Skills from './Components/skills';
 import video from "./assets/video-digital-info.mp4";
 
 ReactDOM.render(
   <div>
   <HashRouter basename="/">
     <Switch>
-            <Route path="/contact">
+            <Route exact path="/contact">
               <Contact />
             </Route>
-            {/* <Route path="/about">
-              <About />
-            </Route> */}
-            <Route path="/">
+            <Route exact path="/skills">
+              <Skills />
+            </Route>
+            <Route exact path="/">
               <App />
             </Route>
         </Switch>

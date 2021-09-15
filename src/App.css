@@ -41,6 +41,7 @@ div#map-size {
   height: 70vw;
   position: relative;
   left: 0;
+  opacity: 0.8;
 }
 
 video {

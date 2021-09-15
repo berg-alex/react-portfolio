@@ -56,6 +56,12 @@
     z-index: -10;
   }
 
+  div.skills-img {
+    
+    opacity: 0.8;
+  
+  }
+
   @media (min-aspect-ratio: 16/9) {
     #bg-vid {
         width:100%;
