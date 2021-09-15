@@ -18,7 +18,7 @@ import myimage from "../assets/react-roadmap-copy.png";
         <Col xs="12" sm="12" md="12" lg="12">
             
                 {/* <img src={Image} alt=""></img> */}
-                <img src={myimage} className="img-fluid mx-auto d-block" alt="react roadmap"></img> 
+                <img style={{opacity: "0.8"}} src={myimage} className="img-fluid mx-auto d-block" alt="react roadmap"></img> 
             
         </Col>
        </div>
