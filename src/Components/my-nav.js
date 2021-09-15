@@ -1,6 +1,6 @@
 import React from "react";
 import {Link } from "react-router-dom";
-import '../contact.css';
+// import '../contact.css';
 import { Navbar, NavbarBrand, NavItem, Button, Col, Container } from 'reactstrap';
 import Lottie from 'react-lottie';
 import animationData from '../assets/66205-coding';

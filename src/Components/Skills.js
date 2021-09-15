@@ -5,7 +5,7 @@ import '../contact.css';
 // import video from "../assets/video-digital-info.mp4";
 import Mynav from "./my-nav";
 import { Col } from 'reactstrap';
-import Image from "../assets/react-roadmap-copy.png";
+import myimage from "../assets/react-roadmap-copy.png";
 
 
 
@@ -16,9 +16,10 @@ import Image from "../assets/react-roadmap-copy.png";
         <Mynav />
 
         <Col xs="12" sm="12" md="12" lg="12">
-            <div className="skills-img" style={{textAlign: "center"}}>
-                <img src={Image} alt=""></img> 
-            </div>
+            
+                {/* <img src={Image} alt=""></img> */}
+                <img src={myimage} className="img-fluid mx-auto d-block" alt="react roadmap"></img> 
+            
         </Col>
        </div>
      );
