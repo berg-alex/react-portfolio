@@ -7,6 +7,7 @@ import Contact from './Components/contact';
 import Skills from './Components/skills';
 import video from "./assets/video-digital-info.mp4";
 
+
 ReactDOM.render(
   <div>
   <HashRouter basename="/">
@@ -22,8 +23,8 @@ ReactDOM.render(
             </Route>
         </Switch>
   </HashRouter>
-  <video id="bg-vid" width="100vw" opacity="60" autoPlay loop muted >
-      <source src={video} type="video/mp4" poster="./assets/bg-poster.png"/>
+  <video id="bg-vid" width="100vw" autoPlay loop muted >
+      <source src={video} type="video/mp4"/>
 
       Sorry, your browser doesn't support embedded videos.
     </video> 

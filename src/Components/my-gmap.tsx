@@ -1,13 +1,14 @@
-import React from 'react';
+import * as React from 'react';
 import { Col, Container } from 'reactstrap';
 import GoogleMapReact from 'google-map-react';
 import '../App.css';
+import {initMap} from "./gmap-circles";
 
 const AnyReactComponent = ({ text }) => (
     <div style={{
       color: 'white', 
       background: 'grey',
-      padding: '15px 10px',
+      padding: '20px 10px',
       display: 'inline-flex',
       textAlign: 'center',
       alignItems: 'center',
@@ -49,11 +50,13 @@ const AnyReactComponent = ({ text }) => (
                 yesIWantToUseGoogleMapApiInternals={true}
               >
               <AnyReactComponent
-                lat={37.8272}
-                lng={-122.2913}
+                // lat={37.8272}
+                // lng={-122.2913}
+                
                 text="My Marker"
               />
-              
+              {initMap}
+              {/* <initMap /> */}
               </GoogleMapReact>
               
             </div>

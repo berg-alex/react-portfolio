@@ -1,11 +1,8 @@
 import React from 'react';
-// import video from "./assets/video-digital-info.mp4";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import Mynav from './Components/my-nav';
 import Mymap from './Components/my-gmap';
-// import Skills from './Components/Skills';
-// import Qualifications from './Components/Qualifications';
 
 
 
