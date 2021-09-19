@@ -20,7 +20,7 @@ import "../style.css";
 // America.
 
 // First, create an object containing LatLng and population for each city.
-function initMap () {
+
 
 interface City {
   center: google.maps.LatLngLiteral;
@@ -28,21 +28,29 @@ interface City {
 }
 
 const citymap: Record<string, City> = {
-  chicago: {
-    center: { lat: 41.878, lng: -87.629 },
-    population: 2714856,
+  sanjose: {
+    center: { lat: 37.3382, lng: -121.8863 },
+    population: 1062000,
   },
-  newyork: {
-    center: { lat: 40.714, lng: -74.005 },
-    population: 8405837,
+  seattle: {
+    center: { lat: 47.6061, lng: -122.3321 },
+    population: 724300,
   },
   losangeles: {
     center: { lat: 34.052, lng: -118.243 },
     population: 3857799,
   },
-  vancouver: {
-    center: { lat: 49.25, lng: -123.1 },
-    population: 603502,
+  portland: {
+    center: { lat: 45.5051, lng: -122.6750 },
+    population: 645200,
+  },
+  lasvegas: {
+    center: { lat: 36.1699, lng: -115.1398 },
+    population: 634700,
+  },
+  phoenix: {
+    center: { lat: 33.4484, lng: -112.0740 },
+    population: 1630000,
   },
 };
 
@@ -73,6 +81,6 @@ function initMap(): void {
     });
   }
 }
-}
+
 
 export { initMap };

@@ -11,13 +11,9 @@ function App() {
   return (
     <div>
       <Mynav />
+      <div className="map-title">Map marked with areas I would consider relocating to, with preference for remote roles.</div>
       <Mymap />
-
-    {/* <video id="bg-vid" width="100vw" opacity="60" autoPlay loop muted >
-      <source src={video} type="video/mp4" poster="./assets/bg-poster.png"/>
-
-      Sorry, your browser doesn't support embedded videos.
-    </video>  */}
+      
   </div>
 );
 }
