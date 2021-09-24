@@ -55,12 +55,13 @@ const citymap: Record<string, City> = {
 };
 
 function initMap(): void {
+
   // Create the map.
   const map = new google.maps.Map(
     document.getElementById("map") as HTMLElement,
     {
       zoom: 4,
-      center: { lat: 37.09, lng: -95.712 },
+      center: { lat: 37.8272, lng: -122.2913 },
       mapTypeId: "terrain",
     }
   );
@@ -79,8 +80,22 @@ function initMap(): void {
       center: citymap[city].center,
       radius: Math.sqrt(citymap[city].population) * 100,
     });
+    
   }
 }
 
+function Mymap() {  
 
-export { initMap };
+  
+    google.maps.event.addDomListener(window, "load", initMap);
+
+    return (
+      <div></div>
+
+      );
+    }
+
+    export default Mymap;
+
+
+// export { initMap };
