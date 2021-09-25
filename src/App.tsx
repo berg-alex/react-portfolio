@@ -4,26 +4,11 @@ import './App.css';
 import Mynav from './Components/my-nav';
 // import { initMap } from './Components/gmap-circles';
 import Mymap from './Components/gmap-circles';
-import ReactGA from 'react-ga';
-
-
-ReactGA.initialize('G-ZKM4XXDV06', { standardImplementation: true });
-
+// import ReactGA from 'react-ga';
 
 
 function App() {
   
-  const pageViewsTracking = (props) => {
-    const pathname = props.match.path;
-
-    let pageView;
-    if (pathname === "*") pageView = '/not-found';
-    else pageView = pathname;
-
-    //sending GA page views
-    ReactGA.pageview(pageView);
-  }
-
   return (
     <div>
       <Mynav />
