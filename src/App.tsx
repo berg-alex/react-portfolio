@@ -8,12 +8,11 @@ import ReactGA from 'react-ga';
 
 
 ReactGA.initialize('G-ZKM4XXDV06', { standardImplementation: true });
-ReactGA.pageview(window.location.pathname + window.location.search);
+// ReactGA.pageview(window.location.pathname + window.location.search);
 
 
 function App() {
-  ReactGA.initialize('G-ZKM4XXDV06', { standardImplementation: true });
-  ReactGA.pageview(window.location.pathname + window.location.search);
+  
   return (
     <div>
       <Mynav />
