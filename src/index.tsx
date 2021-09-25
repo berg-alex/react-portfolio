@@ -6,7 +6,10 @@ import reportWebVitals from './reportWebVitals';
 import Contact from './Components/contact';
 import Skills from './Components/skills';
 import video from "./assets/video-digital-info.mp4";
+import ReactGA from 'react-ga';
 
+ReactGA.initialize('G-ZKM4XXDV06');
+ReactGA.pageview(window.location.pathname + window.location.search);
 
 ReactDOM.render(
   <div>
