@@ -4,11 +4,16 @@ import './App.css';
 import Mynav from './Components/my-nav';
 // import { initMap } from './Components/gmap-circles';
 import Mymap from './Components/gmap-circles';
+import ReactGA from 'react-ga';
 
+
+ReactGA.initialize('G-ZKM4XXDV06');
+ReactGA.pageview(window.location.pathname + window.location.search);
 
 
 function App() {
-  
+  ReactGA.initialize('G-ZKM4XXDV06');
+  ReactGA.pageview(window.location.pathname + window.location.search);
   return (
     <div>
       <Mynav />
