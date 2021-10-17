@@ -41,9 +41,9 @@ const defaultOptions = {
               <Link to="/skills"><Button className="navbutton" style={{width: "150px"}}>Skills </Button></Link>
               </NavItem>
               
-              {/* <NavItem className="navitems" style={{marginBottom: "20px"}}>
-              <Button className="navbutton" href="/qualifications" style={{width: "150px"}}>Qualifications </Button>
-              </NavItem> */}
+              <NavItem className="navitems" style={{marginBottom: "20px"}}>
+              <Link to="/projects"><Button className="navbutton" style={{width: "150px"}}>Projects </Button></Link>
+              </NavItem>
 
               <NavItem className="navitems" style={{marginBottom: "20px"}}>
                 <Link to="/contact"><Button className="navbutton" style={{width: "150px"}}>Contact </Button></Link>

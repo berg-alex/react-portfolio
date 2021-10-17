@@ -5,6 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Contact from './Components/contact';
 import Skills from './Components/skills';
+import Projects from './Components/projects';
 import video from "./assets/video-digital-info.mp4";
 
 
@@ -17,6 +18,9 @@ ReactDOM.render(
             </Route>
             <Route exact path="/skills">
               <Skills />
+            </Route>
+            <Route exact path="/projects">
+              <Projects />
             </Route>
             <Route exact path="/">
               <App />
