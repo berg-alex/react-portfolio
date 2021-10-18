@@ -11,6 +11,11 @@ html, body {
   text-align: center;
 }
 
+.map-title {
+  width: 70%;
+  margin: auto auto;
+}
+
 .mynav {
   opacity: 0.8;
   position: static;
@@ -42,12 +47,16 @@ html, body {
 }
 
 div#map-size {
-  width: 100%;
-  min-width: 100%;
+  width: 70%;
+  
   height: 70vw;
   position: relative;
   left: 0;
   opacity: 0.8;
+}
+
+div#map {
+  width: 50%;
 }
 
 video {
