@@ -1,6 +1,7 @@
 // import '../assets/React-Roadmap copy.png';
 
 import React from "react";
+import { HashRouter, Route, Router, Link } from "react-router-dom";
 import '../contact.css';
 // import video from "../assets/video-digital-info.mp4";
 import Mynav from "./my-nav";
@@ -8,6 +9,7 @@ import { Col } from 'reactstrap';
 import myimage from "../assets/react-roadmap-copy.png";
 import CarouselTest from '../Components/carousel';
 import "../projects.css";
+import { spawn } from "child_process";
 
 
  function Projects() {
@@ -20,7 +22,7 @@ import "../projects.css";
             
                 {/* <img src={Image} alt=""></img> */}
                 <CarouselTest/>
-                <div className="demoLink"><a href="http://54.188.44.165/">View live demo</a></div>
+                <div className="demoLink"><a href="https://wordpress.project.alexberg.app/">View live demo</a></div>
         </Col>
        </div>
      );
