@@ -1,15 +1,13 @@
 // import '../assets/React-Roadmap copy.png';
 
 import React from "react";
-import { HashRouter, Route, Router, Link } from "react-router-dom";
 import '../contact.css';
 // import video from "../assets/video-digital-info.mp4";
 import Mynav from "./my-nav";
 import { Col } from 'reactstrap';
-import myimage from "../assets/react-roadmap-copy.png";
+// import myimage from "../assets/react-roadmap-copy.png";
 import CarouselTest from '../Components/carousel';
 import "../projects.css";
-import { spawn } from "child_process";
 
 
  function Projects() {

@@ -7,13 +7,7 @@ import {
   CarouselCaption
 } from 'reactstrap';
 import "../Components/carouselcss.css";
-import homeimg from "../assets/wordpress-home.png"
 
-
-{/* <img src="https://i.ibb.co/KLQfP00/wordpress-cart.png" alt="wordpress-cart" border="0"></a>
-<img src="https://i.ibb.co/DDJQS8g/wordpress-checkout.png" alt="wordpress-checkout" border="0"></a>
-<img src="https://i.ibb.co/Ltvhs9B/wordpress-home.png" alt="wordpress-home" border="0"></a>
-<img src="https://i.ibb.co/7JtrWs6/wordpress-shop.png" alt="wordpress-shop" border="0"></a> */}
 
 const items = [
   {
@@ -67,7 +61,16 @@ const CarouselTest = (props) => {
         onExited={() => setAnimating(false)}
         key={item.src}
       >
-        <img src={item.src} alt={item.altText} style={{width: "40%"}}/>
+        <div className="image-hover-image"><a className="carlink" href="https://wordpress.project.alexberg.app/"><img className="carlink" src={item.src} alt={item.altText} style={{width: "40%"}}/></a>
+        <div className="image-hover-text">
+        <a className="carlink" href="https://wordpress.project.alexberg.app/">
+            <div className="image-hover-text-bubble">
+                <span className="image-hover-text-title">Click</span>
+                View Live Demo
+            </div>
+            </a>
+        </div>
+  </div>
         <CarouselCaption captionText={item.caption} captionHeader={item.caption} />
       </CarouselItem>
     );

@@ -1,3 +1,78 @@
 .carousel.slide {
     text-align: center;
 }
+
+/* img.carlink {
+    transition: all 0.2s ease-in-out;
+  }
+  
+  img.carlink:hover {
+    filter: brightness(50%);
+  } */
+
+  .image-hover-text-container 
+{
+  position: relative;
+  display: inline-block;
+
+  width: 100%;
+  height: 100%;
+  transition: all 0.2s linear;
+}
+
+.image-hover-image 
+{
+ display: block;
+}
+/* Make the image round */
+/* .image-hover-image img
+{
+  border-radius: 50%;
+
+  height: 200px;
+} */
+
+
+
+.image-hover-text 
+{
+  position: absolute;
+  top: 0;
+  left: 30%;
+  width: 40%;  
+  height: 100%;
+  margin: auto auto;
+  opacity: 0;
+  cursor: default;
+  transition: opacity 0.2s linear;
+}
+.image-hover-text:hover 
+{
+  opacity: 1;
+}
+
+
+.image-hover-text-bubble 
+{
+  /* position: relative; */
+  /* box-sizing: border-box; */
+  top: 0; left: 0; 
+  /* right: 100%; */
+  height: 100%;
+  text-align: center;
+  background: rgba(218, 211, 211, 0.9);
+  border: 1px solid #848484;
+  /* border-radius: 50%; */
+  /* margin: 0 auto; */
+  padding: 25% 8px 5px 8px;
+  overflow: hidden;
+  font-size: 17px;
+  text-align: center;
+  word-wrap: break-word;
+} 
+
+.image-hover-text .image-hover-text-title
+{
+  font-size: 25px;
+  display: block;
+}
