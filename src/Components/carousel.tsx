@@ -61,7 +61,7 @@ const CarouselTest = (props) => {
         onExited={() => setAnimating(false)}
         key={item.src}
       >
-        <div className="image-hover-image"><a className="carlink" href="https://wordpress.project.alexberg.app/"><img className="carlink" src={item.src} alt={item.altText} style={{width: "40%"}}/></a>
+        <div className="image-hover-image"><a className="carlink" href="https://wordpress.project.alexberg.app/"><img className="carlink" src={item.src} alt={item.altText}/></a>
         <div className="image-hover-text">
         <a className="carlink" href="https://wordpress.project.alexberg.app/">
             <div className="image-hover-text-bubble">

@@ -2,6 +2,10 @@
     text-align: center;
 }
 
+.carlink {
+    width: 70%;
+}
+
 /* img.carlink {
     transition: all 0.2s ease-in-out;
   }
@@ -38,8 +42,8 @@
 {
   position: absolute;
   top: 0;
-  left: 30%;
-  width: 40%;  
+  left: 15%;
+  width: 70%;  
   height: 100%;
   margin: auto auto;
   opacity: 0;

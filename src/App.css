@@ -49,14 +49,15 @@ html, body {
 div#map-size {
   width: 70%;
   
-  height: 70vw;
+  height: 50vw;
   position: relative;
   left: 0;
   opacity: 0.8;
 }
 
 div#map {
-  width: 50%;
+  width: 80%;
+  height: 50%;
 }
 
 video {
@@ -101,14 +102,7 @@ video {
     position: relative;
     right: 10vw;
   }
-  /* .navLinks {
-    position: relative;
-    left: 0;
-  }
-  .my-lottie {
-    position: relative;
-    left: 0;
-  } */
+  
  }
 
  /* Medium devices (tablets, 768px and up) */
@@ -119,6 +113,11 @@ video {
     width: 50vw;
     height: 50vw;
     left: 20vw;
+  }
+
+  div#map {
+    width: 70%;
+    height: 50%;
   }
   
   .navLinks {
@@ -141,21 +140,10 @@ video {
 /* Large devices (landscape phones, 992px and up) */
 @media (min-width: 992px) { 
   
-/* .navLinks {
-  position: relative;
-  left: 20%;
-  top: 10vh;
-} */
-
-/* .my-lottie {
-  position: relative;
-  left: -20px;
-} */
-
-/* .navbrand {
-  position: relative;
-  top: 10vh;
-} */
+  div#map {
+    width: 50%;
+    height: 50%;
+  }
 
 
 
